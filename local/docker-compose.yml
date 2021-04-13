@@ -1,0 +1,10 @@
+version: '3'
+services:
+  event_db:
+    image: postgres
+    restart: always
+    ports:
+        - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: event_db

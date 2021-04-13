@@ -1,0 +1,20 @@
+server:
+  port: 8181
+  servlet:
+    context-path: /e-viewer
+
+spring:
+  datasource:
+    url: jdbc:postgresql://192.168.99.100:5432/event_db
+    username: postgres
+    password: admin
+    initialization-mode: always
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+
+jwt:
+  expire: 3600000
+  signing:
+    key: XAhTdDNgZw8x693fEc4Rpoon5PlsCr6KnpyjAeWwhFRggwNFbNQwXgd7srdj
